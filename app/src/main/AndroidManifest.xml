@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="greatjoke.ziyimila.com.greatjoke">
+    package="com.ziyimila.greatjoke">
 
     <application
         android:allowBackup="true"
