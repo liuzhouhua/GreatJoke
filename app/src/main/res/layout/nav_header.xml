@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="?attr/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/nav_header_image"
+        android:src="@drawable/ic_user_image"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:text="Mail  : 744016549@qq.com"
+        android:textSize="14sp"
+        android:id="@+id/nav_header_mail"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_header_username"
+        android:layout_above="@id/nav_header_mail"
+        android:text="Auth : Andy"
+        android:textSize="14sp"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>

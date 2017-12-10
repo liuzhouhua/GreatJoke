@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.ziyimila.greatjoke.Utils.LogUtils;
 import com.ziyimila.greatjoke.base.factory.IPresenterFactory;
 import com.ziyimila.greatjoke.base.factory.PresenterFactoryImpl;
-import com.ziyimila.greatjoke.base.proxy.IPresenterProxy;
 import com.ziyimila.greatjoke.base.presenter.BasePresenter;
+import com.ziyimila.greatjoke.base.proxy.IPresenterProxy;
 import com.ziyimila.greatjoke.base.proxy.PresenterProxyImpl;
 
 /**
