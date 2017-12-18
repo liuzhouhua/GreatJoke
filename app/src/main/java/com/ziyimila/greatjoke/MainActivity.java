@@ -1,13 +1,17 @@
 package com.ziyimila.greatjoke;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
+
+import com.ziyimila.greatjoke.home.adapter.HomeFragmentPagerAdapter;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -32,6 +36,12 @@ public class MainActivity extends AppCompatActivity{
         });
         TextView toolbar_title = (TextView) findViewById(R.id.tool_bar_title);
         toolbar_title.setText("微信");
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.view_page_main);
+        HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout_main);
+        tabLayout.setupWithViewPager(viewPager);
 /*
         RetrofitFactory.getInstance().API().getImageJoke("1","20")
                 .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())

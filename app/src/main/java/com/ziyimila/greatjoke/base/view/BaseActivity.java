@@ -57,6 +57,10 @@ public abstract class BaseActivity<V extends IBaseView,P extends BasePresenter<V
         outState.putBundle(PRESENTER_SAVE_KEY,mProxy.onSaveInstanceState());
     }
 
+    /**
+     * 设置自己的Presenter工厂
+     * @param presenterFactory PresenterFactory类型
+     */
     @Override
     public void setPresenterFactory(IPresenterFactory presenterFactory) {
         LogUtils.i("BaseActivity setPresenterFactory");
